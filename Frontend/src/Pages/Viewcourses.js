@@ -19,15 +19,15 @@ function Viewcourses() {
   const [ambience, setAmbience] = useState("")
 
   const postRequest = () => {
-    const item = {
-      to: data._id,
-      from: userId,
-      course: data.specialization,
-      mode: mode,
-      ambience: ambience,
-      status: "panding"
-    }
-    axios.post(baseUrl + "request", item).then(()=>alert("Request Send Successfully"))
+    // const item = {
+    //   to: data._id,
+    //   from: userId,
+    //   course: data.specialization,
+    //   mode: mode,
+    //   ambience: ambience,
+    //   status: "panding"
+    // }
+    // axios.post(baseUrl + "request", item).then(()=>alert("Request Send Successfully"))
   }
 
 
