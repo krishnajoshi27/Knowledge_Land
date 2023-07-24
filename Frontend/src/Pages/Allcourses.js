@@ -922,7 +922,8 @@ function Allcourses() {
                           alignItems: "center",
                         }}
                       >
-                        <a href="https://us05web.zoom.us/j/83129393827?pwd=ZHZDRWJuYWhCS2ZqakI0aEVheGN4Zz09">
+                      {/* <a href="https://us05web.zoom.us/j/83129393827?pwd=ZHZDRWJuYWhCS2ZqakI0aEVheGN4Zz09"> */}
+                      <a href= "https://meet.google.com/">
                         <button
                          
                           style={{
@@ -1009,7 +1010,8 @@ function Allcourses() {
                         alignItems: "center",
                       }}
                     >
-                     <a href="https://us05web.zoom.us/j/83129393827?pwd=ZHZDRWJuYWhCS2ZqakI0aEVheGN4Zz09">
+                     {/* <a href="https://us05web.zoom.us/j/83129393827?pwd=ZHZDRWJuYWhCS2ZqakI0aEVheGN4Zz09"> */}
+                     <a href= "https://meet.google.com/">
                         <button
                          
                           style={{
