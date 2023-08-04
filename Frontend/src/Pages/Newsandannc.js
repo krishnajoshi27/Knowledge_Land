@@ -47,22 +47,26 @@ function Newsandannc() {
 
 
 
-    <div className='all-courses-1' style={{width:"100%", height:"73vh",backgroundColor:"lightgrey",alignItems:"center",display:"flex",borderRadius:10,flexDirection:"column",overflowY:"auto",paddingBottom:"10px"}}>
+              <div className='all-courses-1' style={{ width: "100%", height: "73vh", backgroundColor: "lightgrey", alignItems: "center", display: "flex", borderRadius: 10, flexDirection: "column", overflowY: "auto", paddingBottom: "10px" }}>
 
-        <div style={{height:"50px", width:"80%", backgroundColor:"white", textAlign:"center", borderRadius:10, marginTop:10, display:"flex", justifyContent:"center", alignItems:"center"}}>
-            <h5>Moodle Link :</h5> <a href='https://moodle.com'> <label>https://moodle.com</label></a>
-        </div>
-        <div style={{height:"50px", width:"80%", backgroundColor:"white", textAlign:"center", borderRadius:10, marginTop:10}}>
-            <h2>News And Announcement</h2>
-        </div>
-                {newsList.map((i)=>
-               <div className='lgnd1' style={{height:"60vh",marginTop:"10px", width:"80%", backgroundColor:"white", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"space-evenly",borderRadius:10,paddingBottom:20}}><br/><br/>
-                <h2>{i.heading}</h2>
-                <label>{i.description}</label>
-                <img className='lgnd1' style={{height:"40vh", width:"60%"}} src={i.image}/>
-               </div>)}
-            </div>}
+                  <div style={{ height: "50px", width: "80%", backgroundColor: "white", textAlign: "center", borderRadius: 10, marginTop: 10, display: "flex", justifyContent: "center", alignItems: "center" }}>
+                      <h5>Moodle Link :</h5> <a href='https://moodle.com'  target="_blank"> <label>https://moodle.com</label></a>
+                  </div>
+                  <div style={{ height: "50px", width: "80%", backgroundColor: "white", textAlign: "center", borderRadius: 10, marginTop: 10 }}>
+                      <h2>News And Announcement</h2>
+                  </div>
+                  {newsList.map((i) =>
+                      <div className='lgnd1' style={{ height: "60vh", marginTop: "10px", width: "80%", backgroundColor: "white", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-evenly", borderRadius: 10, paddingBottom: 20 }}><br /><br />
+                          <h2>{i.heading}</h2>
+                          <label>{i.description}</label>
+                          <img className='lgnd1' style={{ height: "40vh", width: "60%" }} src={i.image} />
+                      </div>)}
+              </div>}
+          
 </div>
+
+
+
   )
 }
 

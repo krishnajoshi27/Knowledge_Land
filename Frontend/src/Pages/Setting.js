@@ -4,7 +4,7 @@ import Sidebar from './Sidebar'
 import Header from './Header'
 import axios from 'axios'
 import { baseUrl } from './BaseUrl'
-import { useNavigate } from 'react-router-dom'
+import { json, useNavigate } from "react-router-dom";
 
 
 function Setting() {
@@ -40,7 +40,7 @@ function Setting() {
     const [validator, setValidator] = useState(false)
     const [videoLink, setVideoLink] = useState("")
 
-
+    const navigate = useNavigate();
 
 
     const [day, setDay] = useState("")
@@ -487,26 +487,20 @@ function Setting() {
 
                                 <select value={qualification} onChange={(e) => setQualification(e.target.value)} style={{ width: "100%", height: 40, }}>
                                     <option selected disabled>Qualification</option>
-                                    <option>BBA</option>
-                                    <option>BE</option>
-                                    <option>B Tech</option>
-                                    <option>BCA</option>
+                                    <option>Master's Degree</option>
+                                    <option>PhD or Doctorate</option>
+                                    <option>Teaching Certification</option>
+                                    <option>Other</option>
                                 </select>
                             </div>
                             <div style={{ width: "80%", display: "flex", flexDirection: "column", alignItems: "flex-start", height: "60px", justifyContent: "space-evenly" }}>
                                 <select value={teachingExp} onChange={(e) => setTeachingExp(e.target.value)} style={{ width: "100%", height: 40, }}>
                                     <option selected disabled>Teaching Experince</option>
-                                    <option>6 Month</option>
-                                    <option>1 Year</option>
-                                    <option>2 Year</option>
-                                    <option>3 Year</option>
-                                    <option>4 Year</option>
-                                    <option>5 Year</option>
-                                    <option>6 Year</option>
-                                    <option>8 Year</option>
-                                    <option>9 Year</option>
-                                    <option>10 Year</option>
-                                    <option>11 Year</option>
+                                    <option>More than 1 year</option>
+                                    <option>1-3 years</option>
+                                    <option>3-5 years</option>
+                                    <option>5-10 years</option>
+                                    <option>More Than 10 years</option>
                                 </select>
                             </div>
                             <button onClick={() => teacherPutData()} className='btn btn-outline-success'>Submit</button>
